@@ -10,6 +10,7 @@ import (
 	"bytes"
 	"fmt"
 
+	// TODO 标红，是否git clone 该代码到 GOPATH 即可
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric/common/ledger/util/leveldbhelper"
 	"github.com/hyperledger/fabric/core/ledger"
