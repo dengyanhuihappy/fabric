@@ -39,6 +39,7 @@ func newBrokerConfig(
 	brokerConfig.Net.WriteTimeout = retryOptions.NetworkTimeouts.WriteTimeout
 
 	brokerConfig.Net.TLS.Enable = tlsConfig.Enabled
+	// HHH 判断 TLS，则设置 TLS
 	if brokerConfig.Net.TLS.Enable {
 		// create public/private key pair structure
 		keyPair, err := tls.X509KeyPair([]byte(tlsConfig.Certificate), []byte(tlsConfig.PrivateKey))
